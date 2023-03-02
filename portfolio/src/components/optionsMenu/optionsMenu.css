@@ -1,0 +1,30 @@
+.optionsMenu-container{
+    background-color: var(--palette-grayblue-darker);
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: -10;
+    display: flex;
+    flex-direction: row;
+}
+
+.optionsMenu-link{
+    width: 125px;
+    padding: 7.5px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: var(--palette-grayblue-lighter);
+}
+
+.optionsMenu-link:hover{
+    color: var(--palette-grayblue-darker);
+    background-color: var(--palette-grayblue-lighter);;
+}
+
+.optionsMenu-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    width: 50%;
+}

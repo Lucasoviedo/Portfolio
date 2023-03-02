@@ -1,0 +1,43 @@
+.navbar-button-options{
+    width: 25px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid var(--palette-grayblue-lighter);
+    text-align: center;
+}
+
+.navbar-header-container{
+    
+    position: fixed;
+    width: 100%;
+    border-top-left-radius: inherit;
+
+    display: flex;
+    align-items: center;
+    height: 20px;
+    padding: 20px;
+    color: var(--palette-grayblue-lighter);
+    background-color: var(--palette-grayblue-dark);
+
+    margin-bottom: 50px;
+}
+
+.navbar-laptop-options{
+    display: none;
+}
+
+.navbar-link{
+    color: var(--palette-grayblue-lighter);
+    text-decoration: none;
+}
+
+@media (min-width: 744px) {
+    
+    .navbar-laptop-options{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+}
