@@ -1,11 +1,11 @@
 import React from 'react'
 import './navbar.css'
 import { Link } from "react-router-dom";
-import LogInContext  from '../../LoginContext'
 import  { useContext } from "react";
+import OptionsContext from '../../../contexts/OptionsContext';
 
 const Navbar = ( ) => {
-    const { handleMenuOpening} = useContext(LogInContext);
+    const { handleMenuOpening} = useContext(OptionsContext);
     return (
         <div className='navbar-header-container'>
             <div onClick={handleMenuOpening} className='navbar-button-options'>
