@@ -1,5 +1,5 @@
 import React from 'react'
-import '../content.css'
+import './aboutMe.css'
 
 const AboutMe = () => {
   return (
@@ -10,7 +10,7 @@ const AboutMe = () => {
         almost an Informatic engineer with a deep interest in 
         web development, more expirienced in front-end development than in back-end
       </p>
-      <button> Download CV </button>
+      <button className='app-button'> Download CV </button>
     </section>
   )
 }

@@ -1,14 +1,16 @@
 import { BrowserRouter } from "react-router-dom";
-import OptionsMenu from "./components/optionsMenu/OptionsMenu";
+
 import { OptionsProvider } from "./contexts/OptionsContext";
-import AppContainer from "./components/appContainer/AppContainer";
+
+import OptionsMenu from "./components/optionsMenu/OptionsMenu";
+import SectionsContainer from "./components/sectionsContainer/SectionsContainer";
 
 function App() {
   return (
     <BrowserRouter>
       <OptionsProvider>
         <OptionsMenu />
-        <AppContainer/>
+        <SectionsContainer/>
       </OptionsProvider>
     </BrowserRouter>
   );

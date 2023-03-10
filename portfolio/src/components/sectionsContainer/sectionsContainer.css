@@ -1,0 +1,23 @@
+.app-container{
+    width: 100%;
+    max-width: inherit;
+    position: absolute;
+    left: 0;
+    top: 0;
+    zoom: 100%;
+    overflow: auto;
+    box-shadow: -5px 10px 20px black;
+    animation: zoom-out-animation 0.5s forwards;
+}
+
+.app-container-reduced{
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    zoom: 75%;
+    border-radius: 20px 0 0 20px ;
+    overflow: hidden;
+    height: 100vh;
+    box-shadow: -5px 10px 20px black;
+    animation: zoom-in-animation 0.5s forwards;
+}

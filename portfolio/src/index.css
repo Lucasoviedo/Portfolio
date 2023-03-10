@@ -4,6 +4,8 @@
     --palette-grayblue-meduim : #657A97;
     --palette-grayblue-light : #C9CFDF;
     --palette-grayblue-lighter : #E9EDF8;
+
+    --palette-message-error: #990000;
 }
 
 @keyframes zoom-out-animation {
@@ -49,28 +51,27 @@ html, body {
     margin: 0;
 }
 
-.app-container{
-    width: 100%;
-    max-width: inherit;
-    position: absolute;
-    left: 0;
-    top: 0;
-    zoom: 100%;
-    overflow: auto;
-    box-shadow: -5px 10px 20px black;
-    animation: zoom-out-animation 0.5s forwards;
+textarea{
+    resize: none;
 }
 
-.app-container-reduced{
-    position: absolute;
-    left: 50%;
-    top: 100px;
-    zoom: 75%;
-    border-radius: 20px 0 0 20px ;
-    overflow: hidden;
-    height: 100vh;
-    box-shadow: -5px 10px 20px black;
-    animation: zoom-in-animation 0.5s forwards;
+input,
+textarea{
+    border: 2px solid var(--palette-grayblue-dark);
+    border-radius: 5px;
+    color: var(--palette-grayblue-darker);
+    padding: 5px;
+}
+
+.app-button{
+    padding: 15px;
+    width: 100px;
+    background-color: var(--palette-grayblue-darker);
+    color: var(--palette-grayblue-lighter);
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px black;
 }
 
 .pruebaaa{

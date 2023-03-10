@@ -1,13 +1,15 @@
 import React from 'react'
-import Now from "../content/now/Now";
-import CV from "../content/cv/CV";
-import ContactMe from "../content/contactMe/ContactMe";
-import Navbar from "../content/navbar/Navbar";
+import Now from "../sections/now/Now";
+import CV from "../sections/cv/CV";
+import ContactMe from "../sections/contactMe/ContactMe";
+import Navbar from "../sections/navbar/Navbar";
 import  { useContext } from "react";
 import OptionsContext from '../../contexts/OptionsContext';
-import AboutMe from '../content/aboutMe/AboutMe';
+import AboutMe from '../sections/aboutMe/AboutMe';
+import { Footer } from '../sections/footer/Footer';
+import './sectionsContainer.css'
 
-const AppContainer = () => {
+const SectionsContainer = () => {
 
     const { openMenu , handleMenuOpening} = useContext(OptionsContext);
 
@@ -19,8 +21,9 @@ const AppContainer = () => {
       <CV/>
       <Now/>
       <ContactMe/>
+      <Footer/>
     </div>
   )
 }
 
-export default AppContainer
+export default SectionsContainer

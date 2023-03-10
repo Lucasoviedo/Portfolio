@@ -1,8 +1,10 @@
 import React from 'react'
-import './optionsMenu.css'
-import { HashLink as Link } from 'react-router-hash-link'
 import  { useContext } from "react";
+import { HashLink as Link } from 'react-router-hash-link'
+
 import OptionsContext from '../../contexts/OptionsContext';
+
+import './optionsMenu.css'
 
 const OptionsMenu = () => {
     const { handleMenuOpening} = useContext(OptionsContext);
