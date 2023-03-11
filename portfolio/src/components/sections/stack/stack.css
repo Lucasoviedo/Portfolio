@@ -1,0 +1,11 @@
+.stack-list-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+    align-self: center;
+}
+
+.stackItem-img{
+    width: 50px;
+    filter: grayscale(0);
+}

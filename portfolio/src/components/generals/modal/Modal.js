@@ -15,7 +15,6 @@ export const Modal = ({children}) => {
             {open && 
                 <div className='modal-container'>
                     <div className='modal-card'>
-
                         <button className='modal-close' onClick={handleClose}>X</button>
                         {children}
                     </div>

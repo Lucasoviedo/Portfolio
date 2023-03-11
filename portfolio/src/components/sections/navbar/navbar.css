@@ -9,6 +9,7 @@
 .navbar-header-container{
     
     position: fixed;
+    z-index: 100;
     width: 100%;
     border-top-left-radius: inherit;
 

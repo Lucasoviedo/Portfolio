@@ -75,9 +75,6 @@ textarea{
 }
 
 .pruebaaa{
-    height: 500px;
     background-color: var(--palette-grayblue-lighter );
     padding: 20px;
-    padding-top: 100px;
-    border-bottom: 2px solid black;
 }

@@ -1,9 +1,7 @@
-import React from 'react'
-
 const Now = () => {
   return (
     <section id='now' className='pruebaaa'>
-      Now
+      <p>WHAT I AM UP TO NOW</p>
     </section>
   )
 }

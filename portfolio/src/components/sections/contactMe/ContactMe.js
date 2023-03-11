@@ -72,9 +72,9 @@ const ContactMe = () => {
                     <button type='submit' value='Send' className='app-button'>Send</button>
                 </form>
             }
-            {!response && 
+            {response && 
                 <Modal>
-                    <h3>HEADER</h3>
+                    <h3>¡The email has shipped!</h3>
                 </Modal>
             }
         </section>

@@ -15,9 +15,9 @@ const OptionsMenu = () => {
                 className='optionsMenu-link' onClick={handleMenuOpening}>
                     Home
                 </Link>
-                <Link to="#cv" smooth 
+                <Link to="#stack" smooth 
                 className='optionsMenu-link' onClick={handleMenuOpening}>
-                    CV
+                    Stack
                 </Link>
                 <Link to="#now" smooth 
                 className='optionsMenu-link' onClick={handleMenuOpening}>
