@@ -3,14 +3,18 @@ import './aboutMe.css'
 
 const AboutMe = () => {
   return (
-    <section id='home' className='pruebaaa'>
-      <h2 className='content-section-title'>AboutMe</h2>
-      <p>
-        I am Lucas Oviedo, an argentinian born in 1998, 
-        almost an Informatic engineer with a deep interest in 
-        web development, more expirienced in front-end development than in back-end
-      </p>
-      <button className='app-button'> Download CV </button>
+    <section id='aboutMe' className='section-container'>
+      <div className='aboutMe-container'>
+        <h2 className='aboutMe-title'>ABOUT ME</h2>
+        <div className='aboutMe-info'>
+          <p>
+            I am Lucas Oviedo, an argentinian born in 1998, 
+            almost an Informatic engineer with a deep interest in 
+            web development and experiencies
+          </p>
+          <button className='aboutMe-cv-button'> Download CV </button>
+        </div>
+      </div>
     </section>
   )
 }

@@ -1,5 +1,3 @@
-import React from 'react'
-import Now from "../sections/now/Now";
 import Stack from '../sections/stack/Stack';
 import ContactMe from "../sections/contactMe/ContactMe";
 import Navbar from "../sections/navbar/Navbar";
@@ -22,9 +20,8 @@ const SectionsContainer = () => {
       <Navbar />
       <Header/>
       <AboutMe/>
-      <Stack/>
       <History/>
-      <Now/>
+      <Stack/>
       <Proyects/>
       <ContactMe/>
       <Footer/>

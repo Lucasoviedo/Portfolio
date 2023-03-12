@@ -44,7 +44,7 @@ const ContactMe = () => {
     } = useForm(initialForm , validationForm)
 
     return (
-        <section id='contactMe' className='pruebaaa'>
+        <section id='contactMe' className='section-container'>
             <h2>Contact me</h2>
             {loading ? <Loader/> :
                 <form onSubmit={handleSubmit} className='contactMe-form'>

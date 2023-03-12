@@ -1,0 +1,15 @@
+#history{
+    display: flex;
+    flex-direction: column;
+}
+
+.history-studies-article{
+    text-align: right;
+    width: 80%;
+    margin-left: 20%;
+}
+
+.history-work-article{
+    text-align: left;
+    width: 80%;
+}

@@ -1,9 +1,14 @@
+import Proyect from "./Proyect"
+
+import './proyects.css'
+
 const Proyects = () => {
-    return (
-        <section id='now' className='pruebaaa'>
-            <p>WHAT I AM UP TO NOW</p>
-        </section>
-    )
+  return (
+    <section id='proyects' className='section-container'>
+        <h2>Proyects</h2>
+        <Proyect/>
+    </section>
+  )
 }
 
 export default Proyects

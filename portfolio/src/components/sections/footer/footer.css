@@ -1,4 +1,12 @@
 .footer-container{
-    height: 100px;
     box-shadow: -1px -1px 25px var(--palette-grayblue-darker);
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-link{
+    text-decoration: none;
+    color:white;
 }

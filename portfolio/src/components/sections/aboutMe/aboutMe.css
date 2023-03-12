@@ -1,3 +1,29 @@
-.content-section-title{
+.aboutMe-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutMe-cv-button{
+    width: 200px;
+    padding: 15px;
+    background-color: var(--palette-grayblue-darker);
+    color: var(--palette-grayblue-lighter);
+    font-weight: 600;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.aboutMe-info{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.aboutMe-title{
+    writing-mode: vertical-rl;
+    word-spacing: -15px;
+    text-orientation: upright;
     color: var(--palette-grayblue-dark)
 }

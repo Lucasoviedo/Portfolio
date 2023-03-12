@@ -11,17 +11,21 @@ const OptionsMenu = () => {
     return (
         <div className='optionsMenu-container'>
             <div className='optionsMenu-links'>
-                <Link to="#home" smooth 
+                <Link to="#aboutMe" smooth 
                 className='optionsMenu-link' onClick={handleMenuOpening}>
-                    Home
+                    About me
+                </Link>
+                <Link to="#history" smooth 
+                className='optionsMenu-link' onClick={handleMenuOpening}>
+                    History
                 </Link>
                 <Link to="#stack" smooth 
                 className='optionsMenu-link' onClick={handleMenuOpening}>
                     Stack
                 </Link>
-                <Link to="#now" smooth 
+                <Link to="#proyects" smooth 
                 className='optionsMenu-link' onClick={handleMenuOpening}>
-                    Now
+                    Proyects
                 </Link>
                 <Link to="#contactMe" smooth 
                 className='optionsMenu-link' onClick={handleMenuOpening}>
