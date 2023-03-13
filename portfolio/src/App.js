@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 import { OptionsProvider } from "./contexts/OptionsContext";
 
@@ -7,12 +7,12 @@ import SectionsContainer from "./components/sectionsContainer/SectionsContainer"
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <OptionsProvider>
         <OptionsMenu />
         <SectionsContainer/>
       </OptionsProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

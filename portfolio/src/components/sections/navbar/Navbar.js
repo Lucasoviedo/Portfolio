@@ -4,12 +4,14 @@ import { Link } from "react-router-dom";
 import  { useContext } from "react";
 import OptionsContext from '../../../contexts/OptionsContext';
 
+import hamburgerMenu from '../../../assets/extras/hamburger-menu.svg'
+
 const Navbar = ( ) => {
     const { handleMenuOpening} = useContext(OptionsContext);
     return (
         <div className='navbar-header-container'>
             <div onClick={handleMenuOpening} className='navbar-button-options'>
-                H
+                <img src={hamburgerMenu} alt='hamburger-menu'/>
             </div>
             <div className='navbar-laptop-options'>
                 <Link to='/Home' className='navbar-link'>Home</Link>

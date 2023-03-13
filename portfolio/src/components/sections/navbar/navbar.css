@@ -3,6 +3,7 @@
     padding: 5px;
     border-radius: 10px;
     border: 1px solid var(--palette-grayblue-lighter);
+    background-color: var(--palette-grayblue-lighter);
     text-align: center;
 }
 

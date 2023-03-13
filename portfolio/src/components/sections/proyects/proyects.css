@@ -9,6 +9,11 @@
     align-items: center;
 }
 
+.proyect-link{
+    text-decoration: none;
+    color: black;
+}
+
 .proyect-img{
     width: 100%;
 }

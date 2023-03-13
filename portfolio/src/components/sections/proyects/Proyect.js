@@ -2,13 +2,15 @@ import proyectImg from './../../../assets/extras/portfolio-header.png';
 
 import './proyects.css'
 
-const Proyect = () => {
+const Proyect = ({title , tec, link}) => {
     return (
-      <article className='proyect-container'>
-        <img src={proyectImg} className='proyect-img'/>
-        <h2>Title</h2>
-        <p>Description</p>
-      </article>
+        <a href={link} target='_blank' className='proyect-link' rel='noreferrer'>
+          <article className='proyect-container'>
+              <img src={proyectImg} className='proyect-img' alt='proyect-img'/>
+              <h2>{title}</h2>
+              <p>{tec}</p>
+          </article>
+        </a>
     )
   }
   
