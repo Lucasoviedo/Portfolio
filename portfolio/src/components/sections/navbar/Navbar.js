@@ -3,13 +3,16 @@ import './navbar.css'
 import { Link } from "react-router-dom";
 import  { useContext } from "react";
 import OptionsContext from '../../../contexts/OptionsContext';
+import AccessibilityContext from '../../../contexts/AccessibilityContext';
 
 import hamburgerMenu from '../../../assets/extras/hamburger-menu.svg'
 
 const Navbar = ( ) => {
     const { handleMenuOpening} = useContext(OptionsContext);
+    const { fire} = useContext(AccessibilityContext);
+    
     return (
-        <div className='navbar-header-container'>
+        <div className={`navbar-header-container ${!fire && "navbar-header-container-dark"} `} >
             <div onClick={handleMenuOpening} className='navbar-button-options'>
                 <img src={hamburgerMenu} alt='hamburger-menu'/>
             </div>

@@ -6,6 +6,12 @@
     --palette-grayblue-lighter : #E9EDF8;
 
     --palette-message-error: #990000;
+
+    --palette-interface-black: #3C3D42;
+    --palette-interface-orange: #db8d26;
+    --palette-interface-white: #F6F8E2;
+    --palette-interface-gray: #E0DDCA;
+    
 }
 
 @keyframes zoom-out-animation {
@@ -49,6 +55,7 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
     margin: 0;
+    color: var(--palette-interface-black);
 }
 
 textarea{
@@ -57,24 +64,33 @@ textarea{
 
 input,
 textarea{
-    border: 2px solid var(--palette-grayblue-dark);
+    border: 2px solid var(--palette-interface-orange);
     border-radius: 5px;
-    color: var(--palette-grayblue-darker);
+    color: var(--palette-interface-orange);
     padding: 5px;
 }
 
 .app-button{
     padding: 15px;
     width: 100px;
-    background-color: var(--palette-grayblue-darker);
-    color: var(--palette-grayblue-lighter);
+    background-color: var(--palette-interface-orange);
+    color: var(--palette-interface-black);
     font-weight: 600;
     border: none;
     border-radius: 25px;
-    box-shadow: 1px 1px 10px black;
+    box-shadow: 1px 1px 10px var(--palette-interface-black);
 }
 
 .section-container{
-    background-color: var(--palette-grayblue-lighter );
+    background-color: var(--palette-interface-white);
     padding: 75px 20px 75px 20px;
+}
+
+
+.section-container-dark{
+    background-color: var(--palette-interface-black);
+}
+
+.text-dark{
+    color: var(--palette-interface-orange);
 }

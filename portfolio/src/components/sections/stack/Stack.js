@@ -13,17 +13,21 @@ import reduxLogo from '../../../assets/logos/redux-logo.svg'
 import sqlserverLogo from '../../../assets/logos/sqlserver-logo.svg'
 
 import StackItem from './StackItem'
+
+import  { useContext } from "react";
+import AccessibilityContext from '../../../contexts/AccessibilityContext';
+
 import './stack.css'
 
 const Stack = () => {
+  const {fire, texts} = useContext(AccessibilityContext);
+
   return (
-    <section id='stack' className='section-container'>
-      <h2>My Stack</h2>
-      <p>
-        To become the best web developer I can be, I'm using this stack to guide me on my journey
-      </p>
-      <h3 className='stack-list-title'>Front-end</h3>
-      <div className='stack-list-container'>
+    <section id='stack' className={`section-container ${!fire && "section-container-dark"}`}>
+      <h2 className={`${!fire && "text-dark"}`}>{texts.stack.title}</h2>
+      <p className={`${!fire && "text-dark"}`}>{texts.stack.description}</p>
+      <h3 className={`stack-list-title ${!fire && "stack-list-title-dark"}`}>Front-end</h3>
+      <div className={`stack-list-container ${!fire && "stack-list-container-dark"}`}>
         <StackItem image={bootstrapLogo} name="Bootstrap"
         link="https://getbootstrap.com/"/>
         <StackItem image={cssLogo} name="CSS"
@@ -37,8 +41,8 @@ const Stack = () => {
         <StackItem image={reduxLogo} name="Redux"
         link="https://es.redux.js.org/"/>
       </div>
-      <h3 className='stack-list-title'>Back-end</h3>
-      <div className='stack-list-container'>
+      <h3 className={`stack-list-title ${!fire && "stack-list-title-dark"}`}>Back-end</h3>
+      <div className={`stack-list-container ${!fire && "stack-list-container-dark"}`}>
         <StackItem image={cppLogo} name="C++"
         link="https://isocpp.org/"/>
         <StackItem image={javascriptLogo} name="JavaScript"
@@ -50,8 +54,8 @@ const Stack = () => {
         <StackItem image={sqlserverLogo} name="SqlServer"
         link="https://www.microsoft.com/es-es/sql-server/sql-server-downloads"/>
       </div>
-      <h3 className='stack-list-title'>Others</h3>
-      <div className='stack-list-container'>
+      <h3 className={`stack-list-title ${!fire && "stack-list-title-dark"}`}>{texts.stack.others}</h3>
+      <div className={`stack-list-container ${!fire && "stack-list-container-dark"}`}>
         <StackItem image={dockerLogo} name="Docker"
         link="https://www.docker.com/"/>
         <StackItem image={githubLogo} name="GitHub"

@@ -1,18 +1,20 @@
-import React from 'react'
 import './aboutMe.css'
 
+import  { useContext } from "react";
+import AccessibilityContext from '../../../contexts/AccessibilityContext';
+
 const AboutMe = () => {
+  const {fire, texts} = useContext(AccessibilityContext);
+
   return (
-    <section id='aboutMe' className='section-container'>
+    <section id='aboutMe' className={`section-container ${!fire && "section-container-dark"}`}>
       <div className='aboutMe-container'>
-        <h2 className='aboutMe-title'>ABOUT ME</h2>
+        <h2 className={`aboutMe-title ${!fire && "aboutMe-title-dark"}`}>{texts.aboutMe.title}</h2>
         <div className='aboutMe-info'>
-          <p>
-            I am Lucas Oviedo, an argentinian born in 1998, 
-            almost an Informatic engineer with a deep interest in 
-            web development and experiencies
+          <p className={`${!fire && "aboutMe-text-dark"}`}>
+            {texts.aboutMe.description}
           </p>
-          <button className='aboutMe-cv-button'> Download CV </button>
+          <button className={`aboutMe-cv-button ${!fire && "aboutMe-cv-button-dark"}`}>{texts.aboutMe.button}</button>
         </div>
       </div>
     </section>

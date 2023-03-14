@@ -6,11 +6,15 @@
 .aboutMe-cv-button{
     width: 200px;
     padding: 15px;
-    background-color: var(--palette-grayblue-darker);
-    color: var(--palette-grayblue-lighter);
+    background-color: var(--palette-interface-orange);
+    color: var(--palette-interface-black);
     font-weight: 600;
     border: none;
     border-radius: 25px;
+    box-shadow: 1px 1px 10px var(--palette-interface-black);
+}
+
+.aboutMe-cv-button-dark{
     box-shadow: 1px 1px 10px black;
 }
 
@@ -21,9 +25,18 @@
     align-items: center;
 }
 
+.aboutMe-text-dark{
+    color: var(--palette-interface-orange)
+}
+
 .aboutMe-title{
     writing-mode: vertical-rl;
     word-spacing: -15px;
     text-orientation: upright;
-    color: var(--palette-grayblue-dark)
+    color: var(--palette-interface-orange);
+    text-shadow: -1px 1px 2px var(--palette-interface-black);
+}
+
+.aboutMe-title-dark{
+    text-shadow: -1px 1px 2px black;
 }

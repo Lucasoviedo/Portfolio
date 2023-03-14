@@ -1,0 +1,100 @@
+{
+    "lenguajes" : {
+        "en" : {
+            "categories" : {
+                "aboutMe" : "About me",
+                "history" : "History",
+                "stack" : "Stack",
+                "proyects" : "Proyects",
+                "contactMe" : "Contact me"
+            },
+            "aboutMe" : {
+                "title" : "ABOUT ME",
+                "description" : "I am Lucas Oviedo, an argentinian born in 1998, almost an Informatic engineer with a deep interest in web development and experiencies",
+                "button" : "Download CV"
+            },
+            "history" : {
+                "workTitle" : "Work experiencie",
+                "workPart1" : "Since October 2021 to the date, I have been working as a Full Stack web developer in a Startup in my city, using React as main front-end tool, and Python, Node Js, Selenium, and JavaScript for the back-end.",
+                "workPart2" : "At the same time, I have played an important role in the direction of the project, making decisions and coordinating the developers' staff and the UX/UI designer, using agile methodologies and tools such as Jira and GitHub for code reviewing and versions managment.",
+                "studyTitle" : "Studies",
+                "studyPart1" : " I am one step away from obtaining my university degree in Informatic Engineering, where I acquired most of the knowledge that I use in my professional development.",
+                "studyPart2" : "In addition to this, I am a highly self-taught person, so I am always looking to learn new tools to improve my work, which means that I am constantly learning something new."
+            },
+            "stack" : {
+                "title" : "My Stack",
+                "description" : "In order to become the best web developer I can be, I'm using this stack to guide me on my journey",
+                "others" : "Others"
+            },
+            "proyects" : {
+                "title" : "Proyects"
+            },
+            "contactMe" : {
+                "title" : "Contact me",
+                "name" : "Name",
+                "namePlaceholder" : "Your name",
+                "nameErrorRequired" : "Field 'Name' is required",
+                "nameErrorRegex" : "Field 'Name' only acepts letters and white spaces",
+                "email" : "E-mail",
+                "emailPlaceholder" : "Your email address",
+                "emailErrorRequired" : "Field 'E-mail' is required",
+                "emailErrorRegex" : "Invalid format on 'Email' field",
+                "comments" : "Comments",
+                "commentsPlaceholder" : "Add some comments",
+                "commentsErrorRequired" : "Field 'Comments' is required",
+                "commentsErrorRegex" : "Field 'Comments' has a limit of 255 characters",
+                "button" : "Send",
+                "sendComment" : "¡The email has shipped!"
+            },
+            "footer" : "Built and designed by Lucas Oviedo"
+        },
+        "es" : {
+            "categories" : {
+                "aboutMe" : "Acerca",
+                "history" : "Historia",
+                "stack" : "Stack",
+                "proyects" : "Proyectos",
+                "contactMe" : "Contactame"
+            },
+            "aboutMe" : {
+                "title" : "ACERCA",
+                "description" : "Soy Lucas Oviedo, argentino nacido en 1998, casi Ingeniero Informatico con un profundo interes en el desarrollo y experiencias web",
+                "button" : "Descargar CV"
+            },
+            "history" : {
+                "workTitle" : "Experiencia laboral",
+                "workPart1" : "Desde octubre 2021 hasta la fecha, me he desarrollado como desarrollador Full Stack web en una StartUp de mi ciudad, usando React como principal herramienta de front-end, y Python, Node Js, Selenium, y JavaScript para el back-end.",
+                "workPart2" : "Al mismo tiempo, tengo un papel importante en la direccion del proyecto, tomando desiciones y coordinando el equipo de desarolladores y diseño UX/UI utilizando metodologias agiles y herramientas como Jira y GitHub para la revision de codigo y manejo de versionado.",
+                "studyTitle" : "Estudios",
+                "studyPart1" : "Estoy a un paso de conseguir mi titulo universitario en Ingenieria Informatica, de donde adquirí la mayoria del conocimiento que utilizo en mi desarrollo profesional.",
+                "studyPart2" : "Ademas, soy una persona bastante autodidactica, por lo que siempre estoy buscando de aprender nuevas herramientas para mejorar mi trabajo, lo que significa que siempre estoy aprendiendo algo nuevo."
+            },
+            "stack" : {
+                "title" : "Mi Stack",
+                "description" : "En orden de convertirme en el mejor desarrollador web que podria ser, estoy utilizando el siguiente stack para guiarme en el viaje.",
+                "others" : "Otros"
+            },
+            "proyects" : {
+                "title" : "Proyectos"
+            },
+            "contactMe" : {
+                "title" : "Contactame",
+                "name" : "Nombre",
+                "namePlaceholder" : "Tu nombre",
+                "nameErrorRequired" : "El campo 'Nombre' es requerido",
+                "nameErrorRegex" : "Campo 'Nombre' solo acepta letras y espacios en blanco",
+                "email" : "E-mail",
+                "emailPlaceholder" : "Tu direccion E-mail",
+                "emailErrorRequired" : "El campo 'E-mail' es requerido",
+                "emailErrorRegex" : "Formato de 'Email' invalido",
+                "comments" : "Comentarios",
+                "commentsPlaceholder" : "Añadir algunos comentarios",
+                "commentsErrorRequired" : "El campo 'Comentarios' es requerido",
+                "commentsErrorRegex" : "Campo 'Comentarios' tiene un limite de 255 caracteres",
+                "button" : "Enviar",
+                "sendComment" : "¡El email ha sido enviado!"
+            },
+            "footer" : "Construido y diseñado por Lucas Oviedo"
+        }
+    }
+}

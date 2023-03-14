@@ -9,6 +9,11 @@
     align-items: center;
 }
 
+.proyect-container-dark{
+    border: 1px solid var(--palette-interface-orange);
+    box-shadow: 1px 1px 2px var(--palette-interface-orange);
+}
+
 .proyect-link{
     text-decoration: none;
     color: black;
@@ -16,4 +21,12 @@
 
 .proyect-img{
     width: 100%;
+    filter: grayscale(75%);
+}
+
+.proyects-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

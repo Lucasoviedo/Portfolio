@@ -1,10 +1,15 @@
 .footer-container{
-    box-shadow: -1px -1px 25px var(--palette-grayblue-darker);
+    box-shadow: -1px -1px 25px var(--palette-interface-gray);
     padding: 30px 20px;
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
+}
+
+.footer-container-dark{
+    box-shadow: -1px -1px 25px var(--palette-interface-orange);
+    background-color: var(--palette-interface-orange);
 }
 
 .footer-git-logo{
@@ -13,5 +18,5 @@
 
 .footer-link{
     text-decoration: none;
-    color: black;
+    color: var(--palette-interface-black);
 }

@@ -4,9 +4,13 @@
     justify-self: center;
     align-self: center;
 
-    border: 1px solid black;
+    border: 1px solid var(--palette-interface-black);
     border-radius:  0 25px 25px 25px;
     padding: 20px;
+}
+
+.stack-list-container-dark{
+    border: 1px solid var(--palette-interface-orange);
 }
 
 .stackItem-container{
@@ -20,19 +24,24 @@
 }
 
 .stackItem-img{
-    width: 100%;
-    filter: grayscale(100%);
+    width: 50px;
+    filter: grayscale(75%);
 }
 
 .stackItem-link{
     text-decoration: none;
-    color: black;
+    color: var(--palette-interface-black);
 }
 
 .stack-list-title{
     margin-bottom: -10px;
     margin-left: 10px;
-    background-color: var(--palette-grayblue-lighter);
+    background-color: var(--palette-interface-white);
     position: relative;
     width: max-content;
+}
+
+.stack-list-title-dark{
+    color: var(--palette-interface-orange);
+    background-color: var(--palette-interface-black);
 }
