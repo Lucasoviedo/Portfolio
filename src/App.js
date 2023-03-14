@@ -1,4 +1,4 @@
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 import { OptionsProvider } from "./contexts/OptionsContext";
 
@@ -8,14 +8,14 @@ import { AccessibilityProvider } from "./contexts/AccessibilityContext";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <AccessibilityProvider>
       <OptionsProvider>
         <OptionsMenu />
         <SectionsContainer/>
       </OptionsProvider>
       </AccessibilityProvider>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

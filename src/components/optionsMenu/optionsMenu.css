@@ -68,12 +68,15 @@
     border-radius: 50%;
     filter: grayscale(30%);
     animation: set-fire-animation ease 0.65s;
+    cursor: pointer;
 }
 
 .optionsMenu-bonfire-off{
     margin-top: 15px;
     border-radius: 50%;
     filter: grayscale(30%);
+    cursor: pointer;
+
 }
 
 .optionsMenu-container{
@@ -90,6 +93,7 @@
     width: 50px;
     border-radius: 50%;
     filter: grayscale(50%);
+    cursor: pointer;
 }
 
 .optionsMenu-flag-off{

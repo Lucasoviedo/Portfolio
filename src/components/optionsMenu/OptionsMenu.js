@@ -27,29 +27,29 @@ const OptionsMenu = () => {
                     onClick={handleLenguajeChange}
                     />
                 </div>
-                <Link to="#aboutMe" smooth 
+                <a href="#aboutMe" smooth 
                 className='optionsMenu-link' onClick={handleMenuOpening}>
                     {texts.categories.aboutMe}
-                </Link>
-                <Link to="#history" smooth 
+                </a>
+                <a href="#history" smooth 
                 className='optionsMenu-link' onClick={handleMenuOpening}>
                     {texts.categories.history}
-                </Link>
-                <Link to="#stack" smooth 
+                </a>
+                <a href="#stack" smooth 
                 className='optionsMenu-link' onClick={handleMenuOpening}>
                     {texts.categories.stack}
-                </Link>
-                <Link to="#proyects" smooth 
+                </a>
+                <a href="#proyects" smooth 
                 className='optionsMenu-link' onClick={handleMenuOpening}>
                     {texts.categories.proyects}
-                </Link>
-                <Link to="#contactMe" smooth 
+                </a>
+                <a href="#contactMe" smooth 
                 className='optionsMenu-link' onClick={handleMenuOpening}>
                     {texts.categories.contactMe}
-                </Link>
+                </a>
             </div>
             <div>
-                <div className={ fire ? "optionsMenu-bonfire-on" : "optionsMenu-bonfire-off" } onClick={handleFireChange}>
+                <div type="button" className={ fire ? "optionsMenu-bonfire-on" : "optionsMenu-bonfire-off" } onClick={handleFireChange}>
                     <img src={bonfireLogo} alt='bonfire' className='optionsMenu-bonfire-logo'/>
                 </div>
             </div>
