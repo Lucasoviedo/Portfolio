@@ -1,0 +1,13 @@
+.optionsMenu-flags{
+    width: 50px;
+    /* border-radius: 10px; */
+    filter: grayscale(50%);
+    cursor: pointer;
+    margin-right: 10px;
+    box-shadow: 1px 1px 1px var(--palette-interface-black);
+}
+
+.optionsMenu-flag-off{
+    filter:  brightness(30%) grayscale(50%);
+    box-shadow: 5px 5px 1px var(--palette-interface-black);
+}

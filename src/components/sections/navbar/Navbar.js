@@ -1,15 +1,16 @@
 import React from 'react'
 import './navbar.css'
-import { Link } from "react-router-dom";
 import  { useContext } from "react";
 import OptionsContext from '../../../contexts/OptionsContext';
 import AccessibilityContext from '../../../contexts/AccessibilityContext';
 
 import hamburgerMenu from '../../../assets/extras/hamburger-menu.svg'
+import { Flags } from '../../extras/flags/Flags';
+import { Bonfire } from '../../extras/bonfire/Bonfire';
 
 const Navbar = ( ) => {
     const { handleMenuOpening} = useContext(OptionsContext);
-    const { fire} = useContext(AccessibilityContext);
+    const { fire, texts} = useContext(AccessibilityContext);
     
     return (
         <div className={`navbar-header-container ${!fire && "navbar-header-container-dark"} `} >
@@ -17,10 +18,30 @@ const Navbar = ( ) => {
                 <img src={hamburgerMenu} alt='hamburger-menu'/>
             </div>
             <div className='navbar-laptop-options'>
-                <Link to='/Home' className='navbar-link'>Home</Link>
-                <Link to='/Stack' className='navbar-link'>Stack</Link>
-                <Link to='/Now' className='navbar-link'>Now</Link>
-                <Link to='/ContactMe' className='navbar-link'>Contact me</Link>
+                <Flags/>
+                <div>
+                    <a href="#aboutMe"  
+                    className='navbar-link'>
+                        {texts.categories.aboutMe}
+                    </a>
+                    <a href="#history" 
+                    className='navbar-link'>
+                        {texts.categories.history}
+                    </a>
+                    <a href="#stack" 
+                    className='navbar-link'>
+                        {texts.categories.stack}
+                    </a>
+                    <a href="#proyects" 
+                    className='navbar-link'>
+                        {texts.categories.proyects}
+                    </a>
+                    <a href="#contactMe" 
+                    className='navbar-link'>
+                        {texts.categories.contactMe}
+                    </a>
+                </div>
+                <Bonfire/>
             </div>
         </div>
     )

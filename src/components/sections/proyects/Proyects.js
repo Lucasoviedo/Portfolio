@@ -12,7 +12,7 @@ const Proyects = () => {
     <section id='proyects' className={`section-container ${!fire && "section-container-dark"} proyects-container`}>
         <h2 className={`${!fire && "text-dark"}`}>{texts.proyects.title}</h2>
         <Proyect title='Portfolio' tec='React-JavaScript-HTML-CSS'
-          link='https://github.com/Lucasoviedo/Portfolio/tree/main/portfolio'/>
+          link='https://github.com/Lucasoviedo/Portfolio'/>
     </section>
   )
 }

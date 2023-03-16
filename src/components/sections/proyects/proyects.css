@@ -1,7 +1,7 @@
 .proyect-container{
     width: 300px;
-    border: 1px solid black;
-    box-shadow: 1px 1px 2px black;
+    border: 1px solid var(--palette-interface-black);
+    box-shadow: 10px 10px var(--palette-interface-black);
 
     display: flex;
     flex-direction: column;
@@ -11,12 +11,12 @@
 
 .proyect-container-dark{
     border: 1px solid var(--palette-interface-orange);
-    box-shadow: 1px 1px 2px var(--palette-interface-orange);
+    box-shadow: 10px 10px var(--palette-interface-orangeDark);
 }
 
 .proyect-link{
     text-decoration: none;
-    color: black;
+    color: var(--palette-interface-black);
 }
 
 .proyect-img{

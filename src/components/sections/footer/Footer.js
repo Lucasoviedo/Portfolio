@@ -10,7 +10,7 @@ export const Footer = () => {
 
     return (
         <div className={`footer-container ${!fire && "footer-container-dark"}`}>
-            <a className='footer-link' href='https://github.com/Lucasoviedo/Portfolio/tree/main/portfolio' 
+            <a className='footer-link' href='https://github.com/Lucasoviedo/Portfolio/' 
             target='_blank' rel="noreferrer">
                 {texts.footer}
             </a>

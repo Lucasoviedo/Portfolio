@@ -8,6 +8,7 @@ const History = () => {
 
   return (
     <section id='history' className={`section-container ${!fire && "section-container-dark"}`}>
+      <div className='container'>
         <article className="history-work-article">
             <h3 className={`${!fire && "text-dark"}`}>{texts.history.workTitle}</h3>
             <p className={`${!fire && "text-dark"}`}>{texts.history.workPart1}</p>
@@ -18,6 +19,7 @@ const History = () => {
             <p className={`${!fire && "text-dark"}`}>{texts.history.studyPart1}</p>
             <p className={`${!fire && "text-dark"}`}>{texts.history.studyPart2}</p>
         </article>
+      </div>
     </section>
   )
 }

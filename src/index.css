@@ -8,9 +8,11 @@
     --palette-message-error: #990000;
 
     --palette-interface-black: #3C3D42;
+    --palette-interface-grayDark: #c7c7c7;
+    --palette-interface-gray: #ecebeb;
+    --palette-interface-white: #f0f0f0;
     --palette-interface-orange: #db8d26;
-    --palette-interface-white: #F6F8E2;
-    --palette-interface-gray: #E0DDCA;
+    --palette-interface-orangeDark: #a56a1d;
     
 }
 
@@ -55,6 +57,21 @@ a{
     transition: all 10s ease;
 }
 
+.app-container::-webkit-scrollbar {
+    width: 0.9em;
+    background-color: var(--palette-interface-orangeDark);
+}
+
+.app-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.app-container::-webkit-scrollbar-thumb {
+    background-color: var(--palette-interface-orange);
+    outline: 2px solid var(--palette-interface-black);
+
+}
+
 html, body {
     font-family: 'Convergence', sans-serif;
     max-width: 100%;
@@ -75,17 +92,6 @@ textarea{
     padding: 5px;
 }
 
-.app-button{
-    padding: 15px;
-    width: 100px;
-    background-color: var(--palette-interface-orange);
-    color: var(--palette-interface-black);
-    font-weight: 600;
-    border: none;
-    border-radius: 25px;
-    box-shadow: 1px 1px 10px var(--palette-interface-black);
-}
-
 .section-container{
     background-color: var(--palette-interface-white);
     padding: 75px 20px 75px 20px;
@@ -98,4 +104,17 @@ textarea{
 
 .text-dark{
     color: var(--palette-interface-orange);
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 600px;
+    }
 }

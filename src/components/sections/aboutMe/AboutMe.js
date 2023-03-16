@@ -8,7 +8,7 @@ const AboutMe = () => {
 
   return (
     <section id='aboutMe' className={`section-container ${!fire && "section-container-dark"}`}>
-      <div className='aboutMe-container'>
+      <div className='aboutMe-container container'>
         <h2 className={`aboutMe-title ${!fire && "aboutMe-title-dark"}`}>{texts.aboutMe.title}</h2>
         <div className='aboutMe-info'>
           <p className={`${!fire && "aboutMe-text-dark"}`}>

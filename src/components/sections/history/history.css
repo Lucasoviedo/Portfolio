@@ -3,6 +3,10 @@
     flex-direction: column;
 }
 
+#history > * > * > h3 {
+    text-decoration: underline 3px var(--palette-interface-orange);
+}
+
 .history-studies-article{
     text-align: right;
     width: 80%;
