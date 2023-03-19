@@ -19,7 +19,7 @@
     padding: 20px;
     color: var(--palette-grayblue-lighter);
     background-color: var(--palette-interface-gray);
-    box-shadow: 0px 0px 15px var(--palette-interface-gray);
+    box-shadow: 0px 0px 15px var(--palette-interface-grayDark);
     margin-bottom: 50px;
 }
 

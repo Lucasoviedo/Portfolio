@@ -18,6 +18,7 @@
     box-shadow: 5px 5px var(--palette-interface-orangeDark);
 }
 
+.aboutMe-info-changer,
 .aboutMe-info{
     display: flex;
     flex-direction: column;
@@ -39,4 +40,17 @@
 
 .aboutMe-title-dark{
     text-shadow: 1px 1px var(--palette-interface-orangeDark);
+}
+
+.aboutMe-myPic{
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--palette-interface-orange);
+}
+
+@media (min-width: 744px){
+    .aboutMe-info-changer{
+        flex-direction: row;
+        gap: 25px;
+    }
 }
