@@ -71,6 +71,7 @@ textarea{
 
 input,
 textarea{
+    font-family: 'Convergence', sans-serif;
     border: 2px solid var(--palette-interface-orange);
     border-radius: 5px;
     color: var(--palette-interface-orange);

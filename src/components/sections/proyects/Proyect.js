@@ -16,17 +16,22 @@ const Proyect = ({title , tec, link , images, description}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   function handlePrev() {
-    setCurrentSlide(currentSlide => (currentSlide - 1 + 4) % 4);
+    if(currentSlide > 0) {
+      setCurrentSlide(currentSlide -1);
+    }
   }
 
   function handleNext() {
-    setCurrentSlide(currentSlide => (currentSlide + 4) % 4);
+    if(currentSlide < images.length - 1) {
+      setCurrentSlide(currentSlide + 1);
+    }
   }
 
   return (
     <div className='proyect-container'>
       <article className={`proyect-image-container ${!fire && "proyect-image-container-dark"}`}
-      onClick={handleImageModal}>
+      // onClick={handleImageModal}
+      >
           <img src={images[0]} className='proyect-img' alt='proyect-img'/>
       </article>
       <div>
@@ -39,11 +44,11 @@ const Proyect = ({title , tec, link , images, description}) => {
         <Modal>
           <div className='proyect-modal-images'>
             <div className="slider">
-              {images.forEach( (element, index) => {
-                <div className="slide">
-                  <img src={images[index]} style={{ opacity: currentSlide === index ? 1 : 0 }}/>
-                </div>
-              })};
+              {images.map( (element, index) => {
+                return (<div className="slide">
+                  <img src={images[index]} alt={index} style={{ opacity: currentSlide === index ? 1 : 0 }}/>
+                </div>)
+              })}
             </div>
             <button onClick={handlePrev}>Prev</button>
             <button onClick={handleNext}>Next</button>
