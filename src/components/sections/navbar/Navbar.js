@@ -13,33 +13,18 @@ const Navbar = ( ) => {
     const { fire, texts} = useContext(AccessibilityContext);
     
     return (
-        <div className={`navbar-header-container ${!fire && "navbar-header-container-dark"} `} >
+        <div className={`navbar-header-container ${!fire ? "navbar-header-container-dark" : ""} `} >
             <div onClick={handleMenuOpening} className='navbar-button-options'>
                 <img src={hamburgerMenu} alt='hamburger-menu'/>
             </div>
             <div className='navbar-laptop-options'>
                 <Flags/>
                 <div>
-                    <a href="#aboutMe"  
-                    className='navbar-link'>
-                        {texts.categories.aboutMe}
-                    </a>
-                    <a href="#history" 
-                    className='navbar-link'>
-                        {texts.categories.history}
-                    </a>
-                    <a href="#stack" 
-                    className='navbar-link'>
-                        {texts.categories.stack}
-                    </a>
-                    <a href="#proyects" 
-                    className='navbar-link'>
-                        {texts.categories.proyects}
-                    </a>
-                    <a href="#contactMe" 
-                    className='navbar-link'>
-                        {texts.categories.contactMe}
-                    </a>
+                    <a href="#aboutMe">{texts.categories.aboutMe}</a>
+                    <a href="#history">{texts.categories.history}</a>
+                    <a href="#stack">{texts.categories.stack}</a>
+                    <a href="#proyects">{texts.categories.proyects}</a>
+                    <a href="#contactMe">{texts.categories.contactMe}</a>
                 </div>
                 <Bonfire/>
             </div>

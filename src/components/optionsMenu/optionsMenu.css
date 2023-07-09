@@ -13,7 +13,7 @@
     background-color: var(--palette-interface-grayDark);
 }
 
-.optionsMenu-link{
+.optionsMenu-links a{
     width: 125px;
     padding: 7.5px;
     margin-bottom: 15px;

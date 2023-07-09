@@ -1,0 +1,33 @@
+.productoSeleccionado-modal-contenedor{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.productoSeleccionado-modal-iconos{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.productoSeleccionado-modal-iconos img{
+    position: relative;
+    z-index: 10;
+}
+
+.productoSeleccionado-modal-iconos > div{
+    color: white;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.productoSeleccionado-modal-imagen-contenedor{
+    padding: 0 5vw;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+}

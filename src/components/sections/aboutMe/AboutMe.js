@@ -1,12 +1,12 @@
 import  { useContext } from "react"
+
 import AccessibilityContext from '../../../contexts/AccessibilityContext';
+
 import myPic from '../../../assets/extras/me.jpg'
 import englishCV from '../../../assets/docs/LucasOviedo-EN.pdf';
 import spanishCV from '../../../assets/docs/LucasOviedo-ES.pdf';
 
 import './aboutMe.css'
-
-
 
 const AboutMe = () => {
   const {fire, lenguaje, texts} = useContext(AccessibilityContext);

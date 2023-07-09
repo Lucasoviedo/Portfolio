@@ -3,13 +3,13 @@
     display: flex;
 }
 
-.header-img{
+.header-container img{
     margin-top: 60px;
     width: 100%;
     filter: brightness(25%) grayscale(100%);
 }
 
-.header-title{
+.header-container h1{
     color: var(--palette-interface-white); 
     margin-top: 70px;
     font-size:30px;
@@ -23,7 +23,7 @@
     overflow: hidden;
 }
 
-.header-title-container{
+.header-container div{
     position:absolute; 
     display:flex; 
     top:0; 
@@ -35,19 +35,7 @@
 }
 
 @media (min-width: 744px) {
-    .header-title{
+    .header-container h1{
         font-size:40px;
-    }
-}
-
-@keyframes typing {
-    from { 
-        width: 0;
-    }
-}
-
-@keyframes blink {
-    50%{
-        border-color: transparent;
     }
 }

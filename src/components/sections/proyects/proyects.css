@@ -1,13 +1,14 @@
 .proyect-container{
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
 .proyect-image-container{
-    width: 350px;
+    width: inherit;
+    max-width: 350px;
     border: 1px solid var(--palette-interface-black);
     box-shadow: 10px 10px var(--palette-interface-black);
-    margin-bottom: 40px;
     background-color: var(--palette-interface-gray);
 
     display: flex;
@@ -28,7 +29,6 @@
 
 .proyect-img{
     width: 100%;
-    max-width: 350px;
     filter: grayscale(75%);
 }
 
@@ -49,6 +49,15 @@
         gap: 25px;
         align-items: center;
         margin-bottom: 25px;
+    }
+
+    .container div:nth-child(odd) article{
+        order: 1;
+    }
+
+    .container div:nth-child(odd) h2,
+    .container div:nth-child(odd) p {
+        text-align: right;
     }
 }
 
@@ -85,3 +94,14 @@
     height: 100%;
     object-fit: cover;
   }
+
+
+
+
+
+
+
+
+
+
+

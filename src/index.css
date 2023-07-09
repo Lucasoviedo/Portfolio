@@ -13,7 +13,6 @@
     --palette-interface-white: #f0f0f0;
     --palette-interface-orange: #db8d26;
     --palette-interface-orangeDark: #a56a1d;
-    
 }
 
 @keyframes zoom-out-animation {
@@ -49,6 +48,18 @@
         height: 100vh;
         border-radius: 20px 0 0 20px ;
         overflow: hidden;
+    }
+}
+
+@keyframes typing {
+    from { 
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50%{
+        border-color: transparent;
     }
 }
 
